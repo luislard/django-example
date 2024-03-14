@@ -4,6 +4,7 @@
 python3 -m venv .venv
 source .venv/bin/activate
 cd src
+python manage.py migrate
 python manage.py runserver
 ```
 
@@ -22,4 +23,9 @@ python manage.py makemigrations
 ### Create an app
 ```
 python manage.py startapp instruments
+```
+
+### Create superuser
+```
+python manage.py createsuperuser
 ```
