@@ -4,6 +4,7 @@
 python3 -m venv .venv
 source .venv/bin/activate
 cd src
+pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
@@ -28,4 +29,9 @@ python manage.py startapp instruments
 ### Create superuser
 ```
 python manage.py createsuperuser
+```
+
+### Dump dependencies
+``` 
+pip freeze > requirements.txt
 ```
