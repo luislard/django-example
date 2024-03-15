@@ -1,6 +1,8 @@
 # Start the project using venv
 
 ```
+git clone https://github.com/luislard/django-example.git
+cd django-example
 python3 -m venv .venv
 source .venv/bin/activate
 cd src
