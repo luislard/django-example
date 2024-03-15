@@ -35,3 +35,9 @@ python manage.py createsuperuser
 ``` 
 pip freeze > requirements.txt
 ```
+
+### Revert all migrations
+```
+# python manage.py migrate <app> zero
+python manage.py migrate pages zero
+```
